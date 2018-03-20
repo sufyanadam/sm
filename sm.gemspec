@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["sufyanadam@gmail.com"]
 
   spec.summary       = %q{Post slack messages from the comfort of you command line.}
-  spec.description   = %q{A command line utility to post a message to any channel/user in slack. Provide a message as an argument or pipe input to the post-slack-msg command.}
+  spec.description   = %q{A command line utility to post a message to any channel/user in slack. Provide a message as an argument or pipe input to the slack-msg command.}
   spec.homepage      = "https://github.com/sufyanadam/sm"
   spec.license       = "MIT"
 

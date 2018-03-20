@@ -27,16 +27,16 @@ Set the following environment variables:
 `SLACK_MSG_ICON_EMOJI'` (optional) - The avatar emoji to use for the message. Defaults to ':ghost:'
 
 ```bash
-post-slack-msg 'CHANNEL' 'YOUR MESSAGE'
+slack-msg 'CHANNEL' 'YOUR MESSAGE'
 
 Example:
 
-post-slack-msg '#doughnuts' "I've got a dozen!"
+slack-msg '#doughnuts' "I've got a dozen!"
 
 
 Piping output from other programs as the slack message text:
 
-{ echo My current processes:; ps; } | bundle exec post-slack-msg '#system-msgs'
+{ echo My current processes:; ps; } | slack-msg '#system-msgs'
 ```
 
 ## Development
