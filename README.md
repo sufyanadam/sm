@@ -27,11 +27,11 @@ Set the following environment variables:
 `SLACK_MSG_ICON_EMOJ'` (optional) - The avatar emoji to use for the message. Defaults to ':ghost:'
 
 ```bash
-send-slack-msg 'CHANNEL' 'YOUR MESSAGE'
+post-slack-msg 'CHANNEL' 'YOUR MESSAGE'
 
 Example:
 
-send-slack-msg '#doughnuts' "I've got a dozen!"
+post-slack-msg '#doughnuts' "I've got a dozen!"
 ```
 
 ## Development
