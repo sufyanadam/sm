@@ -1,4 +1,4 @@
-# psm
+# sm
 
 A very simple, small command line utility to post a slack message to any slack channel or
 user.
@@ -8,7 +8,7 @@ user.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'psm'
+gem 'sm'
 ```
 
 And then execute:
@@ -17,7 +17,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install psm
+    $ gem install sm
 
 ## Usage
 
@@ -27,11 +27,11 @@ Set the following environment variables:
 `SLACK_MSG_ICON_EMOJ'` (optional) - The avatar emoji to use for the message. Defaults to ':ghost:'
 
 ```bash
-psm 'CHANNEL' 'YOUR MESSAGE'
+sm 'CHANNEL' 'YOUR MESSAGE'
 
 Example:
 
-psm '#doughnuts' "I've got a dozen!"
+sm '#doughnuts' "I've got a dozen!"
 ```
 
 ## Development
@@ -42,7 +42,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[sufyanadam]/psm. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/[sufyanadam]/sm. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
@@ -50,4 +50,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the Psm project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[sufyanadam]/psm/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the Sm project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[sufyanadam]/sm/blob/master/CODE_OF_CONDUCT.md).

@@ -1,5 +1,5 @@
 require 'spec_helper'
-require_relative '../../lib/psm/post_slack_message'
+require_relative '../../lib/sm/post_slack_message'
 
 RSpec.describe PostSlackMessage do
   describe ".to" do

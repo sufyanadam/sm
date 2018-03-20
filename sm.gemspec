@@ -1,17 +1,17 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "psm/version"
+require "sm/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "psm"
-  spec.version       = Psm::VERSION
+  spec.name          = "sm"
+  spec.version       = Sm::VERSION
   spec.authors       = ["Sufyan Adam"]
   spec.email         = ["sufyanadam@gmail.com"]
 
-  spec.summary       = %q{A command line utility to post slack messages.}
-  spec.description   = %q{A command line utility that posts a given message to a given channel in slack. The user to post as and the emoji_icon are configurable as environment variables}
-  spec.homepage      = "https://github.com/sufyanadam/psm"
+  spec.summary       = %q{Post slack messages from the comfort of you command line.}
+  spec.description   = %q{A command line utility to post a message to any channel/user in slack. Provide a message as an argument or pipe input to the post-slack-msg command.}
+  spec.homepage      = "https://github.com/sufyanadam/sm"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'

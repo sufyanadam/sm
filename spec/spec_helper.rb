@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "psm"
+require "sm"
 require 'webmock/rspec'
 
 RSpec.configure do |config|
