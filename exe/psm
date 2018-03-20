@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+URL = ENV['SLACK_WEBHOOK_URL']
+
+channel = ARGV.shift
+content = ARGV.empty? ? ARGF.read : StringIO.new(ARGV.join("\n")).read
+exit 0 if content.empty?
+
+username   = ENV['SLACKBOT_USERNAME'] || 'slackbot'
+icon_emoji = ENV['SLACK_MSG_ICON_EMOJI'] || ':ghost:'
+
+begin
+  PostSlackMessage.to(channel, content, username, icon_emoji, URL)
+rescue RestClient::Exceptions => e
+  puts "Error posting to slack #{e.message}:\n#{e.backtrace}"
+end
