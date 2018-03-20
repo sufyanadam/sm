@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
+require 'sm'
+
 URL = ENV['SLACK_WEBHOOK_URL']
 
 channel = ARGV.shift
@@ -10,7 +12,7 @@ username   = ENV['SLACKBOT_USERNAME'] || 'slackbot'
 icon_emoji = ENV['SLACK_MSG_ICON_EMOJI'] || ':ghost:'
 
 begin
-  PostSlackMessage.to(channel, content, username, icon_emoji, URL)
-rescue RestClient::Exceptions => e
-  puts "Error posting to slack #{e.message}:\n#{e.backtrace}"
+  Sm.psm(channel, content, username, icon_emoji, URL)
+rescue Sm::Error => e
+  puts "Error posting to slack #{e.message}:\n#{e.backtrace.join("\n")}"
 end
