@@ -24,7 +24,7 @@ Or install it yourself as:
 Set the following environment variables:
 `SLACK_WEBHOOK_URL`    (required) - Get this by [creating an incoming webhook integration in your slack account](https://api.slack.com/incoming-webhooks)
 `SLACKBOT_USERNAME`    (optional) - The user name to send the message as. Defaults to 'slackbot'
-`SLACK_MSG_ICON_EMOJ'` (optional) - The avatar emoji to use for the message. Defaults to ':ghost:'
+`SLACK_MSG_ICON_EMOJI'` (optional) - The avatar emoji to use for the message. Defaults to ':ghost:'
 
 ```bash
 post-slack-msg 'CHANNEL' 'YOUR MESSAGE'
@@ -32,6 +32,11 @@ post-slack-msg 'CHANNEL' 'YOUR MESSAGE'
 Example:
 
 post-slack-msg '#doughnuts' "I've got a dozen!"
+
+
+Piping output from other programs as the slack message text:
+
+{ echo My current processes:; ps; } | bundle exec post-slack-msg '#system-msgs'
 ```
 
 ## Development
