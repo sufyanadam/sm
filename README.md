@@ -1,8 +1,7 @@
-# Psm
+# psm
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/psm`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+A very simple, small command line utility to post a slack message to any slack channel or
+user.
 
 ## Installation
 
@@ -22,7 +21,18 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Set the following environment variables:
+`SLACK_WEBHOOK_URL`    (required) - Get this by [creating an incoming webhook integration in your slack account](https://api.slack.com/incoming-webhooks)
+`SLACKBOT_USERNAME`    (optional) - The user name to send the message as. Defaults to 'slackbot'
+`SLACK_MSG_ICON_EMOJ'` (optional) - The avatar emoji to use for the message. Defaults to ':ghost:'
+
+```bash
+psm 'CHANNEL' 'YOUR MESSAGE'
+
+Example:
+
+psm '#doughnuts' "I've got a dozen!"
+```
 
 ## Development
 
@@ -32,7 +42,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/psm. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/[sufyanadam]/psm. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
@@ -40,4 +50,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the Psm project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/psm/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the Psm project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[sufyanadam]/psm/blob/master/CODE_OF_CONDUCT.md).
